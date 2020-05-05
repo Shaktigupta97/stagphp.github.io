@@ -4,25 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no">
-  <link rel="canonical" href="https://stagphp.io/announcements/" />
 
   <!-- Primary Meta Tags -->
-  <title>StagPHP Community Announcements</title>
-  <meta name="title" content="StagPHP Community Announcements">
-  <meta name="description" content="Go through community announcements to get the details of the upcoming release of the StagPHP framework. Learn what our community is building and fixing.">
+  <title>StagPHP Framework Architecture</title>
+  <meta name="title" content="StagPHP Framework Architecture">
+  <meta name="description" content="Below listed flow chart elaborates how StagPHP processes every single request. It starts from startup.php and after processing the request, it routes the processed and valid request to your application....">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stagphp.io/announcements/">
-  <meta property="og:title" content="StagPHP Community Announcements">
-  <meta property="og:description" content="Go through community announcements to get the details of the upcoming release of the StagPHP framework. Learn what our community is building and fixing.">
+  <meta property="og:url" content="https://stagphp.io/contribute.html">
+  <meta property="og:title" content="StagPHP Framework Architecture">
+  <meta property="og:description" content="Below listed flow chart elaborates how StagPHP processes every single request. It starts from startup.php and after processing the request, it routes the processed and valid request to your application....">
   <meta property="og:image" content="https://stagphp.io/assets/media/social.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://stagphp.io/announcements/">
-  <meta property="twitter:title" content="StagPHP Community Announcements">
-  <meta property="twitter:description" content="Go through community announcements to get the details of the upcoming release of the StagPHP framework. Learn what our community is building and fixing.">
+  <meta property="twitter:url" content="https://stagphp.io/contribute.html">
+  <meta property="twitter:title" content="StagPHP Framework Architecture">
+  <meta property="twitter:description" content="Below listed flow chart elaborates how StagPHP processes every single request. It starts from startup.php and after processing the request, it routes the processed and valid request to your application....">
   <meta property="twitter:image" content="https://stagphp.io/assets/media/social.jpg">
 
   <script>
@@ -209,41 +208,40 @@
   <!-- Body Container -->
   <div class="body-container">
     <!-- Header Content -->
-    <div style="background-image: url(/assets/media/announcement-bg.jpg); background-size: cover; background-position: center top;">
+    <div style="background-image: url(/assets/media/home-bg.jpg); background-size: cover; background-position: center top;">
       <div class="py-5" style="height: 350px;">
       </div>
     </div>
 
     <!-- Body Content -->
-    <div class="body-content py-5">
+    <div class="body-content">
 
       <div class="container content-section py-5">
-        <div class="section-header py-5">
-          <h1>Community <strong>Announcements</strong></h1>
+        <div class="row py-5">
+          <div class="col-12">
+            <div class="section-header text-center mb-5">
+              <h1>StagPHP Architecture</h1>
+              <p>StagPHP works on MVC architecture</p>
+            </div>
+            <div class="row icon-box">
+              <div class="col-12 align-self-center">
+                <img class="img-fluid mb-5" src="/assets/media/main/architecture.png" />
+                <p class="text-justify">All the requests received are processed, filtered, and secured by the StagPHP. Then the request is passed to your application as per the routing logic defined by you in your application. Your application will then process the request using the controllers you used. Controllers control your application model and views. You have the complete freedom to choose any controllers from the list of available core controllers. Unlike other frameworks, StagPHP loads only essential controllers to keep your application lightweight. You can also use custom controllers (StagONS) to extend the built-in functionality of StagPHP. For security reasons, only use trusted StagONS listed in the StagPHP StagONS archive, until and unless you are sure.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row grid-list">
+      </div>
 
-          <div class="col-12 pb-4 mb-4">
-            <h4 class="mb-3"><a href="#">Working on next release v1.0.7</a></h4>
-            <p class="mb-1"><small class="text-muted"> DATE 5<sup>th</sup> May 2020</small></p>
-            <p>StagONS integration almost completed. We are planing tp launch this release after several verbose testing. Currently working on StagONS integration and discovery...</p>
-            <a class="mb-3" href="/announcements/release/v1.0.7.html">Continue reading...</a>
+      <div class="container content-section pt-3 pb-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-left">
+              <h3>Request Processing Flow Chat</h3>
+            </div>
+            <p class="text-justify">Below listed flow chart elaborates how StagPHP processes every single request. It starts from startup.php and after processing the request, it routes the processed and valid request to your application. Rest handled by your application.</p>
+            <img class="img-fluid my-5" src="/assets/media/main/request-processing.png" />
           </div>
-
-          <div class="col-12 pb-4 mb-4">
-            <h4 class="mb-3"><a href="#">Working on next release v1.0.6</a></h4>
-            <p class="mb-1"><small class="text-muted"> DATE 5<sup>th</sup> May 2020</small></p>
-            <p>StagONS integration almost completed. We are planing tp launch this release after several verbose testing. Currently working on StagONS integration and discovery...</p>
-            <a class="mb-3" href="/announcements/release/v1.0.6.html">Continue reading...</a>
-          </div>
-
-          <div class="col-12 pb-4 mb-4">
-            <h4 class="mb-3"><a href="#">Working on next release v1.0.5</a></h4>
-            <p class="mb-1"><small class="text-muted"> DATE 11<sup>th</sup> March 2020</small></p>
-            <p>StagONS integration almost completed. We are planing tp launch this release after several verbose testing. Currently working on StagONS integration and discovery...</p>
-            <a class="mb-3" href="/announcements/release/v1.0.5.html">Continue reading...</a>
-          </div>
-
         </div>
       </div>
 
